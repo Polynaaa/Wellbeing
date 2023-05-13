@@ -6,7 +6,7 @@ Web Application Development 2
 Coursework 2
 
 Installation: 
-1. Downloa zip file "Gavrilova_Polina_CW2", extract folder inside.
+1. Downloa zip file "wellbeing" and extract folder inside or clone git repository
 2. Open the project in Visual Studio code
 3. Open the terminal window and run the following commands:
     npm install
