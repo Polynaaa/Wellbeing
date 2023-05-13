@@ -1,0 +1,33 @@
+<html>
+    <head>
+        {{>header}}
+    </head>
+    <body class="container">
+        <nav class="navbar navbar-light bg-white">
+            <div style="height: 50px; padding-left: 100px; padding-right: 100px;" class="container-fluid justify-content-between align-content-center">
+                <a class="navbar-brand fs-4 fw-bold" href="/">Well<span class="fst-italic fw-normal">being</span></a>
+                <ul class="navbar-nav d-flex flex-row">
+                    <li class="nav-item"><button class="btn btn-light me-2">Login</button></li>
+                    <li class="nav-item"><button class="btn btn-light">Register</button></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div style="height: auto; margin: 100px; padding: 50px; border: 5px solid lightblue; border-radius: 10px;">
+            <h2>New User Registration</h2>
+            <form method="post" role="/register">
+                <div class="form-group mb-3">
+                    <label for="username">User Name</label>
+                    <input type="text" class="form-control" id="username" name="username" placeholder="Enter user name" required>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="password">Password (8 characters minimum)</label>
+                    <input type="password" class="form-control" id="pass" name="pass" placeholder="Enter password" minlength="8" required>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Register" class="btn btn-primary w-25 fs-4 fw-bold" style="background-color: lightblue; border: none;">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,56 @@
+<html lang="en">
+    <head>
+    {{>header}}
+    </head>
+
+    <body>
+        {{>nav}}
+        
+        <div style="height: 300px; background-image: linear-gradient(to bottom right, rgba(167,215,235,1), rgba(226,235,167,1))">
+            <div class="text-white ">
+                <div style="padding-top: 50px; padding-left: 100px; padding-right: 100px;">
+                    <p class="fs-5">“Wellness is not a ‘medical fix’ but a way of living – a lifestyle sensitive and responsive to all the dimensions of body, 
+                mind, and spirit, an approach to life we each design to achieve our highest potential for well-being now and forever.”</p>
+                    <p class="fs-5 fst-italic">- Greg Anderson</p>
+                </div>
+                <div style="text-align: center; margin-top: 50px;">
+                <a href="/set"><button style=" height: 50px; border: none; background-color: white; color: rgba(201,227,197,1)" class="btn btn-primary w-25 fs-5 fw-bold">Set your goals now!</button></a>
+                </div>
+            </div>
+        </div>
+
+        <div style="height: 100px; padding-left: 100px; padding-right: 100px;" class="d-flex flex-row w-100 justify-content-between mt-5">
+            <button style="border: none; background-color: rgba(167,215,235,1); color: white" class="btn btn-primary w-25 h-100 fs-4 fw-bold"><a class="text-decoration-none text-white" href="/main/nutrition">Nutrition</a></button>
+            <button style="border: none; background-color: rgba(201,227,197,1); color: white" class="btn btn-primary w-25 h-100 fs-4 fw-bold"><a class="text-decoration-none text-white" href="/main/fitness">Fitness</a></button>
+            <button style="border: none; background-color: rgba(226,235,167,1); color: white" class="btn btn-primary w-25 h-100 fs-4 fw-bold"><a class="text-decoration-none text-white" href="/main/mental">Mental health</a></button>
+        </div>
+
+        <div style="margin: 100px; padding:50px; height: auto; border: 5px solid rgba(201,227,197,1); border-radius: 10px;">
+            <div>
+                <h2 class="mb-4">About {{name}}</h2>
+                {{#posts}}
+                <div class="card mb-3" style="">
+                    <div class="row g-0">
+                        <div class="col-md-2">
+                            <img src="{{img}}" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-10">
+                            <div class="card-body">
+                                <h5 class="card-title">{{title}}</h5>
+                                <p class="card-text">{{text}}</p>
+                                <p class="card-text"><small class="text-muted">{{author}}</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{/posts}}
+
+                {{^posts}}
+                No posts
+                {{/posts}}
+            </div>
+        </div>
+
+    </body>
+
+</html>
